@@ -14,6 +14,7 @@ body, html {
     padding: 0;
 }
 
+/*FOR GRID LAYOUT*/
 
 body {
     height: 100vh;
@@ -21,11 +22,10 @@ body {
     display: grid;
     align-items: stretch;
     /*figure out the real dimensions later*/
-    grid-template-columns: 1fr 25% 43% 1fr;
+    grid-template-columns: 1fr minmax(0, 500px) 800px 1fr;
     grid-template-areas: "asidebar1 sidebar form asidebar2";
 
 }
-
 
 .blackbar {
     background-color: black;
@@ -41,18 +41,14 @@ body {
 
 #logo-sidebar {
     grid-area: sidebar;
+    position: relative;
     background: url(images/golddoof.jpg) no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
-#form-text > * {
-    padding-left: 3rem;
-    padding-right: 5rem;
-}
+/*FOR GRID LAYOUT*/
 
+
+/*FOR SIDEBAR CONTENT */
 #logo-background {
     text-align: center;
     width: 100%;
@@ -63,7 +59,28 @@ body {
 #logo-background > h1 {
     color: white;
     font-family: 'Electrolize', sans-serif;
+    line-height: 2.5em;
 }
+
+#photo-credits {
+    position: absolute;
+    bottom: 0.25em;
+    width: 100%;
+    text-align: center;
+}
+
+#photo-credits * {
+    color: white;
+}
+
+/*END FOR SIDEBAR CONTENT */
+
+
+#form-text > * {
+    padding-left: 3rem;
+    padding-right: 5rem;
+}
+
 
 
 #form-text {
@@ -146,3 +163,5 @@ h2 {
 #login-link a:hover {
     text-decoration: underline;
 }
+
+
