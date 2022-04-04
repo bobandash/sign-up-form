@@ -8,31 +8,49 @@
     <link rel = "stylesheet" href = "index.css">
 </head>
 <body>
-    <section id="logo-sidebar">
-        <div>GoldDoof</div>
-        <p>Photo by <a href = "">CREATOR NAME</a> on <a href = "">LINK</a></p>
-    </section>
-    <section id = "form-text">
-        <h2>Sign up to become one of the Bidoof following the legendary GoldDoof</h2>
+    <div id = "aside-1" class = "blackbar"></div>
+    <div id="logo-sidebar">
+        <div id = "logo-background">
+            <h1>GoldDoof</h1>
+        </div>
+<!--         <div id = "photo-credits">
+            <p>Photo by <a href = "">CREATOR NAME</a> on <a href = "">LINK</a></p>
+        </div> -->
+    </div>
+    <div id = "form-text">
+        <h2>Unfortunately, this is a fake form for now. But... You know that you need a form like this in the future. 
+            Sign up <em>now</em> to become one of the Bidoof following the legendary GoldDoof.</h2>
         <h2>You <em>know</em> you have to.</h2>
-        <h3>Let's do this!</h3>
+        <h2>Let's do this!</h2>
         <form method = "post">
-            <label for = "first-name">First Name</label>
-            <input type = "text" id = "first-name" name = "first-name" required>
-            <label for = "last-name">Last Name</label>
-            <input type = "text" id = "last-name" name = "last-name" required>
-            <label for = "email">Email</label>
-            <input type = "text" id = "email" name = "email" required>
-            <label for = "email">Phone Number</label>
-            <input type = "text" id = "phone-number" name = "phone-number" required>
-            <label for = "password-information">Password</label>
-            <input type = "password" id = "password-information" name = "password-information" required>
-            <label for = "password-confirmation">Password</label>
-            <input type = "password" id = "password-confirmation" name = "password-confirmation" required>
-            <button type = "submit">Create Account</button>
+            <div id = "form-grid">
+                <div id = "first-col-form-elements">
+                    <label for = "first-name">First Name</label>
+                    <input tabindex = "1" type = "text" id = "first-name" name = "first-name" size = "25" required>
+                    <label for = "email">Email</label>
+                    <input tabindex = "3" type = "text" id = "email" name = "email" size = "25" required>
+                    <label for = "password-information">Password</label>
+                    <input tabindex = "5" type = "password" id = "password-information" name = "password-information" size = "25" required>
+                    <div id = "submit-button">
+                        <button tabindex = "7" type = "submit">Create Account</button>
+                    </div>
+                </div>
+                <div id = "second-col-form-elements">
+                    <label for = "last-name">Last Name</label>
+                    <input tabindex = "2" type = "text" id = "last-name" name = "last-name" size = "25" required>
+                    <label for = "email">Phone Number</label>
+                    <input tabindex = "4" type = "text" id = "phone-number" name = "phone-number" size = "25" required>
+                    <label for = "password-confirmation">Confirm Password</label>
+                    <input tabindex = "6" type = "password" id = "password-confirmation" name = "password-confirmation" size = "25" required>
+                </div>
+            </div>
         </form>
+        <div id = "login-link">
             <p>Already have an account? <a href = "">Log in</a></p>
-    </section>
+        </div>
+    </div>
+
+    <div id = "aside-2" class = "blackbar"></div>
 
 </body>
 </html>
